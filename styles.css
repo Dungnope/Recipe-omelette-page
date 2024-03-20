@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark__Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose__White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light__Grey: hsl(30, 18%, 87%);
+    --Wenge__Brown: hsl(30, 10%, 34%);
+    --Dark__Charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+body {
+    background-color: var(--Eggshell);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    padding: 124px 0;
+}
+
+
+h1,
+h2 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    color: var(--Nutmeg);
+}
+
+h1 {
+    color: black;
+    margin: 30px 0 28px;
+}
+
+.recipe__guide {
+    background-color: var(--White);
+    grid-column: 3 / span 1;
+    border-radius: 10px;
+}
+
+.recipe__img {
+    margin: 40px;
+}
+
+.recipe__image {
+    border-radius: 10px;
+    width: 656px;
+}
+
+.recipe__details {
+    margin: 40px;
+}
+
+.recipe__essay {
+    color: var(--Wenge__Brown);
+    margin: 28px 0 34px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.recipe__box {
+    background-color: var(--Rose__White);
+    padding: 28px;
+    margin-bottom: 34px;
+    border-radius: 8px;
+}
+
+.recipe__preparation {
+    font-family: 'Outfit';
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--Dark__Raspberry);
+}
+
+.recipe__preparation-time {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 1rem;
+}
+
+.recipe__preparation-time li {
+    font-size: 16px;
+    margin: 0 0 10px 10px;
+    color: var(--Wenge__Brown);
+}
+
+.recipe__preparation-time li::marker {
+    color: var(--Dark__Raspberry);
+}
+
+.recipe__preparation-time li span {
+    font-weight: 700;
+}
+
+.recipe__preparation-time li:last-child {
+    margin-bottom: 0;
+}
+
+.recipe_box2 {
+    border-bottom: 1px solid var(--Light__Grey);
+    padding-bottom: 28px;
+    margin-bottom: 34px;
+}
+
+.recipe__ingredients {
+    margin-bottom: 28px;
+}
+
+.recipe__ingredients--list {
+    padding-left: 12px;
+}
+
+.recipe__ingredients--list li {
+    padding-left: 1rem;
+    margin: 0 0 10px 10px;
+}
+
+.recipe__ingredients--list li::marker {
+    color: var(--Nutmeg);
+}
+
+.recipe__ingredients--list li span {
+    color: var(--Wenge__Brown);
+}
+
+.recipe_box3 {
+    border-bottom: 1px solid var(--Light__Grey);
+    padding-bottom: 28px;
+    margin-bottom: 34px;
+}
+
+.recipe__instructions {
+    margin-bottom: 28px;
+    padding-left: 1rem;
+}
+
+.recipe__instructions--list {
+    padding-left: 40px;
+}
+
+.recipe__instructions--list li {
+    margin: 0 0 10px 0;
+    color: var(--Wenge__Brown);
+    padding-left: 1rem;
+}
+
+.recipe__instructions--list li::marker {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+.recipe__instructions--list li span {
+    font-weight: 700;
+}
+
+.recipe__Nutrition {
+    margin-bottom: 28px;
+}
+
+.recipe__Nutrition--essay {
+    margin: 26px 0 16px 0;
+}
+
+.recipe__Nutrition--list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.recipe__Nutrition--list li {
+    display: flex;
+    padding: 16px 0 0 0;
+    flex-direction: column;
+}
+
+.recipe__Nutrition--list li:first-child span {
+    padding-left: 30px;
+}
+
+.recipe__Nutrition--list li span {
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--Light__Grey);
+    padding-bottom: 18px;
+}
+
+.recipe__Nutrition--list li span:last-child {
+    border: 0;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+
+.recipe__Nutrition--list li:last-child span {
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
